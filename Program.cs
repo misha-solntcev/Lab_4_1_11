@@ -27,6 +27,12 @@ namespace Lab_4_1_11
 
             for (int i = 0; i < array.Length; i++)
                 Console.WriteLine(array[i] + "\t" + array_Fx[i]);
+            Console.WriteLine();
+
+            // Linq
+            var res = array.Select(x => 0.5 * x).ToArray();
+            for (int i = 0; i < array.Length; i++)
+                Console.WriteLine(array[i] + "\t" + res[i]);
 
             Console.ReadKey();
         }
